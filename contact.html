@@ -21,6 +21,27 @@
     <main>
         <h2>Get in Touch</h2>
         <p>Feel free to reach out to me with any questions or opportunities!</p>
+        
+        <!-- Added Contact Form -->
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="reason">Reason for contact:</label>
+            <select id="reason" name="reason" required>
+                <option value="hi">Saying hi</option>
+                <option value="contractor">Looking for a contractor</option>
+                <option value="interview">Interested in an interview</option>
+            </select>
+
+            <label for="comment">Your message:</label>
+            <textarea id="comment" name="comment" rows="5" required></textarea>
+
+            <input type="submit" value="Send Message">
+        </form>
     </main>
 
     <footer>
