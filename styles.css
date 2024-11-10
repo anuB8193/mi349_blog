@@ -4,14 +4,17 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f4f4f4; /* Background color */
 }
 
 header {
-    background-color: #333;
+    background-color: #333; /* Dark background for header */
     color: white;
-    padding: 10px 0;
+    padding: 15px 0;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 header h1 {
@@ -34,25 +37,17 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* Main Layout and Content */
 main {
     padding: 20px;
 }
 
-/* Sticky Navigation */
-nav {
-    position: sticky;
-    top: 0;
-    background-color: #333;
-    padding: 10px 0;
-    z-index: 1000;
-}
-
-/* Footer styling */
+/* Footer Styling */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 15px 0;
 }
 
 /* Image styling for both About and Index pages */
@@ -99,6 +94,23 @@ header img {
 
 .index-text {
     flex: 1; /* Ensures the text takes up the remaining space */
+}
+
+/* Floated Image with Caption */
+.float-img {
+    float: left;
+    margin-right: 20px; /* Space between the image and text */
+    margin-bottom: 15px; /* Adds some space below the image */
+    max-width: 300px; /* Keeps the image size controlled */
+    height: auto; /* Maintains the aspect ratio */
+}
+
+/* Caption for Images */
+figcaption {
+    font-size: 0.8em; /* Smaller font size for captions */
+    color: #888; /* Grey color for caption text */
+    text-align: center;
+    margin-top: 5px;
 }
 
 /* Table styling */
@@ -191,5 +203,12 @@ table th {
     .about-img, .index-img {
         max-width: 100%; /* Makes the image responsive on mobile */
         margin-right: 0; /* Removes margin on mobile */
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form select,
+    .contact-form textarea {
+        width: 100%; /* Full width for form fields */
     }
 }
