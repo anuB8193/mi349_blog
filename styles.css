@@ -109,7 +109,7 @@ header img {
 figcaption {
     font-size: 0.8em; /* Smaller font size for captions */
     color: #888; /* Grey color for caption text */
-    text-align: center;
+    text-align: left;
     margin-top: 5px;
 }
 
