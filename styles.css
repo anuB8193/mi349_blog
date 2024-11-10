@@ -169,10 +169,13 @@ table th {
     flex: 2;
 }
 
-/* Floated Image */
+/* Floated Image with text next to it */
 .float-img {
     float: left;
-    margin: 0 15px 15px 0;
+    margin-right: 15px; /* Adds space between the image and the text */
+    margin-bottom: 15px; /* Adds some space under the image */
+    max-width: 300px; /* Keeps the image size controlled */
+    height: auto; /* Maintains the aspect ratio */
 }
 
 /* Caption for Images */
