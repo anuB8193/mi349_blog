@@ -57,7 +57,7 @@ footer {
 
 /* Image styling */
 img {
-    max-width: 300px; /* You can adjust this value */
+    max-width: 100%; /* Ensure the image width is responsive */
     height: auto; /* Maintains the aspect ratio */
 }
 
@@ -143,11 +143,16 @@ table th {
 /* Two-column Flexbox layout */
 .two-column {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allows content to stack on smaller screens */
 }
 
 .two-column .column {
     flex: 1;
     margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures content is aligned evenly */
 }
 
 /* Three-column Flexbox layout */
@@ -202,5 +207,13 @@ figcaption {
         display: block;
         margin-right: 0;
         text-align: center;
+    }
+
+    .two-column {
+        flex-direction: column; /* Stacks the two columns vertically on smaller screens */
+    }
+
+    .two-column .column {
+        width: 100%; /* Ensure each column takes full width on mobile */
     }
 }
