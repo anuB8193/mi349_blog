@@ -171,10 +171,12 @@ table th {
 }
 
 /* Caption for Images */
-.caption {
-    font-size: 0.9em;
-    color: #888;
-    text-align: center;
+figcaption {
+    font-size: 0.8em; /* Smaller font size for the caption */
+    color: #888; /* Grey color for the caption text */
+    text-align: center; /* Center the caption under the image */
+    margin-top: 5px; /* Adds some space between the image and the caption */
+    clear: both; /* Ensures the caption stays below the floated image */
 }
 
 /* Global Margins and Paddings */
