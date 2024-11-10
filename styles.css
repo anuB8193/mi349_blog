@@ -57,7 +57,7 @@ footer {
 
 /* Image styling */
 img {
-    max-width: 100%; /* Ensure the image width is responsive */
+    max-width: 300px; /* Set a fixed max-width for images */
     height: auto; /* Maintains the aspect ratio */
 }
 
