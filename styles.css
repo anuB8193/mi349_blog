@@ -162,7 +162,7 @@ table th {
 /* Floated Image with text next to it */
 .float-img {
     margin-right: 15px; /* Adds space between the image and the text */
-    margin-bottom: 15px; /* Adds some space under the image */
+    margin-bottom: 0; /* Ensures there's no bottom margin */
     max-width: 300px; /* Keeps the image size controlled */
     height: auto; /* Maintains the aspect ratio */
 }
@@ -171,7 +171,7 @@ table th {
 figcaption {
     font-size: 0.8em; /* Smaller font size for the caption */
     color: #888; /* Grey color for the caption text */
-    text-align: left; /* Center the caption under the image */
+    text-align: left; /* Left-align caption */
     margin-top: 5px; /* Adds some space between the image and the caption */
     clear: both; /* Ensures the caption stays below the floated image */
     width: 300px; /* Ensures the caption width matches the image width */
