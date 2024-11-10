@@ -123,24 +123,7 @@ table th {
     background-color: #555;
 }
 
-/* Flexbox Layout */
-.container {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 0;
-}
-
-.sidebar {
-    width: 25%;
-    background-color: #ccc;
-    padding: 20px;
-}
-
-.main-content {
-    width: 70%;
-}
-
-/* Two-column Flexbox layout */
+/* Flexbox Layout for Two Columns */
 .two-column {
     display: flex;
     justify-content: space-between;
@@ -182,7 +165,7 @@ table th {
 figcaption {
     font-size: 0.8em; /* Smaller font size for the caption */
     color: #888; /* Grey color for the caption text */
-    text-align: left; /* Align the caption to the left with the image */
+    text-align: center; /* Center the caption under the image */
     margin-top: 5px; /* Adds some space between the image and the caption */
     clear: both; /* Ensures the caption stays below the floated image */
     width: 300px; /* Ensures the caption width matches the image width */
