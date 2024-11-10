@@ -152,11 +152,17 @@ table th {
     flex: 2;
 }
 
+/* Flexbox container for image + text */
+.image-text-container {
+    display: flex;
+    align-items: flex-start; /* Ensures the text is aligned to the top with the image */
+    margin-bottom: 15px; /* Adds space below the image + text section */
+}
+
 /* Floated Image with text next to it */
 .float-img {
-    float: left;
     margin-right: 15px; /* Adds space between the image and the text */
-    margin-bottom: 15px; /* Adds some space under the image */
+    margin-bottom: 0; /* Ensures there's no bottom margin (text is below) */
     max-width: 300px; /* Keeps the image size controlled */
     height: auto; /* Maintains the aspect ratio */
 }
@@ -165,9 +171,8 @@ table th {
 figcaption {
     font-size: 0.8em; /* Smaller font size for the caption */
     color: #888; /* Grey color for the caption text */
-    text-align: center; /* Center the caption under the image */
+    text-align: left; /* Align the caption to the left with the image */
     margin-top: 5px; /* Adds some space between the image and the caption */
-    clear: both; /* Ensures the caption stays below the floated image */
     width: 300px; /* Ensures the caption width matches the image width */
 }
 
